@@ -73,45 +73,22 @@ java -jar target/<jar_file_name>.jar
     - Parameters:
         - `key`: The key of the configuration.
 
-### WebSocket Endpoint
-
-- **/api/watchConfig**: Establish a WebSocket connection to watch changes in a configuration key.
-
 ## Examples
 
 ### Example HTTP Request (Using `.http` file)
 
 ```http
-### PUT request to update a configuration value in etcd
-PUT http://localhost:8080/api/config?key=/config/myapp
-Content-Type: application/json
-
-"new_value"
-
-### GET request to retrieve a configuration value from etcd
-GET http://localhost:8080/api/config?key=/config/myapp
+### Put request to put configuration to etcd server
+POST http://localhost:8080/api/config?
+    key=/DAILY_LIMIT&
+    value=500.00
 Accept: text/plain
 
-### WebSocket request to watch changes in a configuration key
-WS ws://localhost:8080/api/watchConfig?key=/config/myapp
+### Get request to get a configuration from etcd server
+GET http://localhost:8080/api/config?
+    key=/DAILY_LIMIT
+Accept: text/plain  
 ```
 
 ## Troubleshooting
-
-- **WebSocket Issues**: Ensure proper WebSocket handling in your client and server implementations.
-- **etcd Watch Problems**: Verify etcd configuration and connectivity.
-- **General Issues**: Check logs (`application.log`) for errors and debug information.
-
-## Contributing
-
-Contributions are welcome! Fork the repository and submit a pull request with your enhancements.
-
-### Notes:
-
-- Replace `<repository_url>`, `<repository_directory>`, `<jar_file_name>`, and other placeholders with actual values relevant to your project.
-- Provide detailed steps for installation, setup, and usage to help users understand how to run and interact with your application.
-- Include examples of HTTP requests using `.http` file format for testing API endpoints.
-- Mention troubleshooting tips to assist users in resolving common issues.
-- Adjust the structure and content based on the specific features and nuances of your implementation.
-
-This README.md file structure aims to provide comprehensive information to users and potential contributors about your Vert.x and etcd integration project, facilitating smooth setup, usage, and troubleshooting.
+- **etcd Connection Problems**: Verify etcd configuration and connectivity.
