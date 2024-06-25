@@ -76,14 +76,18 @@ java -jar target/<jar_file_name>.jar
 
 ### Example HTTP Request (Using `.http` file)
 
-```http
-### Put request to put configuration to etcd server
-POST http://localhost:8080/api/config?
-    key=/DAILY_LIMIT&
-    value=500.00
-Accept: text/plain
+Put request to put configuration to etcd server
 
-### Get request to get a configuration from etcd server
+
+```http
+POST http://localhost:8080/api/config?key=/DAILY_LIMIT&value=500.00
+Accept: text/plain
+```
+
+Get request to get a configuration from etcd server
+
+
+```http
 GET http://localhost:8080/api/config?
     key=/DAILY_LIMIT
 Accept: text/plain  
