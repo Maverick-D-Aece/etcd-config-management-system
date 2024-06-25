@@ -1,17 +1,16 @@
-# Vert.x with etcd Configuration Management and WebSocket Example
+# Vert.x with etcd Configuration Management Example
 
-This project demonstrates how to integrate Vert.x with etcd for configuration management and WebSocket handling in a Java application.
+This project demonstrates how to integrate Vert.x with etcd for configuration management in a Java application.
 
 ## Overview
 
-Vert.x is a polyglot event-driven application framework that runs on the Java Virtual Machine (JVM). It provides a powerful toolkit for building reactive applications and supports various protocols and integrations, including WebSocket handling.
+Vert.x is a polyglot event-driven application framework that runs on the Java Virtual Machine (JVM). It provides a powerful toolkit for building reactive applications and supports various protocols and integrations.
 
 etcd is a distributed key-value store that is widely used for shared configuration and service discovery in distributed systems. This project showcases how to use etcd for dynamic configuration updates in a Vert.x application, leveraging its watch feature to reactively handle changes.
 
 ## Features
 
 - **Configuration Management**: Utilize etcd to manage application configuration dynamically.
-- **WebSocket Integration**: Implement WebSocket endpoints to provide real-time communication capabilities.
 - **Asynchronous Handling**: Ensure non-blocking operations using Vert.x's asynchronous model.
 
 ## Requirements
