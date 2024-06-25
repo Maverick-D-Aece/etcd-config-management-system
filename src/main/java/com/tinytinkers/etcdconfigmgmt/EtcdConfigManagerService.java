@@ -11,14 +11,13 @@ import java.util.concurrent.*;
 import static java.util.concurrent.TimeUnit.MILLISECONDS;
 import static org.slf4j.LoggerFactory.getLogger;
 
-public class EtcdConfigManagerClient {
+public class EtcdConfigManagerService {
+    private static final Logger LOGGER = getLogger(EtcdConfigManagerService.class);
     public static final long READ_TIMEOUT = 5000;
-
-    private final Logger LOGGER = getLogger(getClass());
 
     private final KvClient kvClient;
 
-    public EtcdConfigManagerClient(String endpoint, int port) {
+    public EtcdConfigManagerService(String endpoint, int port) {
         this.kvClient = EtcdClient
                 .forEndpoint(endpoint, port)
                 .withPlainText()
@@ -59,30 +58,5 @@ public class EtcdConfigManagerClient {
         }
     }
 
-    public void watchConfig(String key, Runnable callback) {
-        try {
-            LOGGER.info("Setting up watch for key: {}", key);
-
-            this.kvClient
-                    .watch(ByteString.copyFromUtf8(key))
-                    .start()
-                    .forEachRemaining(watchUpdate -> {
-                        LOGGER.debug("Received watch update for key: {}", key);
-                        watchUpdate.getEvents()
-                                .forEach(event -> {
-                                    LOGGER.info("Config value changed for key: [{}]", key);
-                                    LOGGER.debug("New config value is: [{}]", event.getKv().getValue().toStringUtf8());
-
-
-
-                                });
-                        callback.run();
-                    });
-
-            LOGGER.info("Watch setup completed for key: {}", key);
-        } catch (Exception e) {
-            LOGGER.error("Error setting up watch for key: {}", key, e);
-        }
-    }
-
+    // TODO: add method to watch config changes as well
 }

@@ -5,19 +5,107 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40582419-c032-4196-9b6f-b6b9f6274380" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infra/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tinytinkers/etcdconfigmgmt/EtcdConfigManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tinytinkers/etcdconfigmgmt/EtcdConfigManagerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tinytinkers/etcdconfigmgmt/EtcdConfigManagerVerticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tinytinkers/etcdconfigmgmt/EtcdConfigManagerVerticle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tinytinkers/etcdconfigmgmt/MainVerticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tinytinkers/etcdconfigmgmt/MainVerticle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tinytinkers/etcdconfigmgmt/helpers/EnvironmentVariablesRetriever.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tinytinkers/etcdconfigmgmt/helpers/EnvironmentVariablesRetriever.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tinytinkers/etcdconfigmgmt/requests/ExampleRequests.http" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tinytinkers/etcdconfigmgmt/requests/ExampleRequests.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ecms.env" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ecms.env" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTTP Request" />
+        <option value="HTTP Public Environment File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Maverick-D-Aece"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Maverick-D-Aece/etcd-config-management-system.git",
+    "accountId": "f8e7265a-ad60-46a9-8499-4cf7de371003"
+  }
+}]]></component>
+  <component name="HttpClientBidiClientMessagesInputHistory">
+    <entries>
+      <HistoryEntry>
+        <option name="language" value="JSON" />
+        <option name="text" value="yo" />
+      </HistoryEntry>
+      <HistoryEntry>
+        <option name="language" value="JSON" />
+        <option name="text" value="la" />
+      </HistoryEntry>
+      <HistoryEntry>
+        <option name="language" value="JSON" />
+        <option name="text" value="get" />
+      </HistoryEntry>
+      <HistoryEntry>
+        <option name="language" value="JSON" />
+        <option name="text" value="get" />
+      </HistoryEntry>
+      <HistoryEntry>
+        <option name="language" value="JSON" />
+        <option name="text" value="get" />
+      </HistoryEntry>
+      <HistoryEntry>
+        <option name="language" value="JSON" />
+        <option name="text" value="DAILY_LIMIT" />
+      </HistoryEntry>
+      <HistoryEntry>
+        <option name="language" value="JSON" />
+        <option name="text" value="DAILY_LIMIT" />
+      </HistoryEntry>
+      <HistoryEntry>
+        <option name="language" value="JSON" />
+        <option name="text" value="DAILY_LIMIT" />
+      </HistoryEntry>
+      <HistoryEntry>
+        <option name="language" value="JSON" />
+        <option name="text" value="DAILY_LIMIT" />
+      </HistoryEntry>
+      <HistoryEntry>
+        <option name="language" value="JSON" />
+        <option name="text" value="DAILY_LIMIT" />
+      </HistoryEntry>
+      <HistoryEntry>
+        <option name="language" value="JSON" />
+        <option name="text" value="DAILY_LIMIT" />
+      </HistoryEntry>
+    </entries>
+  </component>
+  <component name="HttpClientSelectedEnvironments">
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" environment="test" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/tinytinkers/etcdconfigmgmt/requests/ExampleRequests.http" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/ws-requests.http" environment="test" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2iMDTa2SOYYODWsaurGEctyIyVs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -26,13 +114,104 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.ConfigClient.executor": "Run",
+    "Application.MainVerticle.executor": "Debug",
+    "Docker.infra.etcd: Compose Deployment.executor": "Run",
+    "HTTP Request.ExampleRequests | Get request to get a configuration from etcd server.executor": "Run",
+    "HTTP Request.ExampleRequests | Put request to put configuration to etcd server.executor": "Run",
+    "HTTP Request.ExampleRequests | WebSocket request to watch the state of a configuration in etcd server.executor": "Run",
+    "HTTP Request.Get Config.executor": "Run",
+    "HTTP Request.Get Configuration.executor": "Run",
+    "HTTP Request.Put Config.executor": "Run",
+    "HTTP Request.Put Configuration.executor": "Run",
+    "HTTP Request.PutConfig | Get request to get a configuration from etcd server.executor": "Run",
+    "HTTP Request.PutConfig | Put request to put configuration to etcd server.executor": "Run",
+    "HTTP Request.Watch Configuration.executor": "Run",
+    "HTTP Request.ws-requests | Simple WebSocket Request.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="excludedTypes">
+      <set>
+        <option value="HttpClient.HttpRequestRunConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="HTTP Request.Put Configuration">
+    <configuration name="MainVerticle" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="envFilePaths">
+        <option value="$PROJECT_DIR$/src/main/resources/ecms.env" />
+      </option>
+      <option name="MAIN_CLASS_NAME" value="com.tinytinkers.etcdconfigmgmt.MainVerticle" />
+      <module name="etcd-config-management-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tinytinkers.etcdconfigmgmt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Get Configuration" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/src/main/java/com/tinytinkers/etcdconfigmgmt/requests/ExampleRequests.http" index="2" requestIdentifier="Get request to get a configuration from etcd server" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="Put Configuration" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" path="$PROJECT_DIR$/src/main/java/com/tinytinkers/etcdconfigmgmt/requests/ExampleRequests.http" requestIdentifier="Put request to put configuration to etcd server" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="Watch Configuration" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" path="$PROJECT_DIR$/src/main/java/com/tinytinkers/etcdconfigmgmt/requests/ExampleRequests.http" index="3" requestIdentifier="WebSocket request to watch the state of a configuration in etcd server" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="start infra.etcd" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="services">
+            <list>
+              <option value="etcd" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="infra/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.MainVerticle" />
+      <item itemvalue="Docker.start infra.etcd" />
+      <item itemvalue="HTTP Request.Put Configuration" />
+      <item itemvalue="HTTP Request.Watch Configuration" />
+      <item itemvalue="HTTP Request.Get Configuration" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.Get Configuration" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -49,7 +228,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1719291562404</updated>
-      <workItem from="1719291563456" duration="2000" />
+      <workItem from="1719291563456" duration="7276000" />
+      <workItem from="1719304312004" duration="14297000" />
     </task>
     <servers />
   </component>

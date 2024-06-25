@@ -13,42 +13,46 @@ import io.vertx.core.json.JsonObject;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class EnvConfigRetriever {
+public class EnvironmentVariablesRetriever {
 
-    public static final String CONFIG_PREFIX = "ecms.";
+    public static final String VARIABLE_PREFIX = "ecms.";
 
-    private EnvConfigRetriever() { }
+    private EnvironmentVariablesRetriever() { }
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(EnvConfigRetriever.class);
-    private static JsonObject configs;
+    private static final Logger LOGGER = LoggerFactory.getLogger(EnvironmentVariablesRetriever.class);
+    private static JsonObject variables;
 
     public static Future<Void> init(Vertx vertx) {
         Promise<Void> promise = Promise.promise();
-        ConfigStoreOptions env = new ConfigStoreOptions()
+        var env = new ConfigStoreOptions()
                 .setType("env");
-        ConfigRetrieverOptions configRetrieverOptions = new ConfigRetrieverOptions()
+        var configRetrieverOptions = new ConfigRetrieverOptions()
                 .setScanPeriod(5000)
                 .addStore(env);
-        ConfigRetriever configRetriever = ConfigRetriever.create(vertx, configRetrieverOptions);
-        configRetriever.getConfig(config -> {
-            if (config.succeeded()) {
-                var envConfigs = config.result()
-                        .stream()
-                        .filter(entry -> entry.getKey().startsWith(CONFIG_PREFIX))
-                        .collect(Collectors.toMap(entry -> entry.getKey().substring(CONFIG_PREFIX.length()), Map.Entry::getValue));
 
-                configs = new JsonObject(envConfigs);
+        var configRetriever = ConfigRetriever.create(vertx, configRetrieverOptions);
+        configRetriever.getConfig(configRetrieval -> {
+            if (configRetrieval.succeeded()) {
+                var envVars = configRetrieval.result()
+                        .stream()
+                        .filter(entry -> entry.getKey().startsWith(VARIABLE_PREFIX))
+                        .collect(Collectors.toMap(entry ->
+                                entry.getKey().substring(VARIABLE_PREFIX.length()),
+                                Map.Entry::getValue)
+                        );
+
+                variables = new JsonObject(envVars);
                 promise.complete();
             } else {
-                promise.fail(config.cause());
-                LOGGER.error("Unable to configure.", config.cause());
+                promise.fail(configRetrieval.cause());
+                LOGGER.error("Unable to configure.", configRetrieval.cause());
             }
         });
 
         return promise.future();
     }
 
-    public static JsonObject getConfigs() {
-        return configs;
+    public static JsonObject getVariables() {
+        return variables;
     }
 }
