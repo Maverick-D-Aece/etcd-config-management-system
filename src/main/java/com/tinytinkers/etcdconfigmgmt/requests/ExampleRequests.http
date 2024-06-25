@@ -1,0 +1,10 @@
+### Put request to put configuration to etcd server
+POST http://localhost:8080/api/config?
+    key=/getpay/events/consume-events&
+    value=false
+Accept: text/plain
+
+### Get request to get a configuration from etcd server
+GET http://localhost:8080/api/config?
+    key=/getpay/events/consume-eventsum
+Accept: text/plain
