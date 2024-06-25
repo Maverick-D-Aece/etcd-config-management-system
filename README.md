@@ -88,8 +88,7 @@ Get request to get a configuration from etcd server
 
 
 ```http
-GET http://localhost:8080/api/config?
-    key=/DAILY_LIMIT
+GET http://localhost:8080/api/config?key=/DAILY_LIMIT
 Accept: text/plain  
 ```
 
